@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E105CA522442D94700D50ED5 /* AlbumServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105CA512442D94700D50ED5 /* AlbumServices.swift */; };
+		E1BD0C042442D25E00552BBB /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD0C032442D25E00552BBB /* Album.swift */; };
+		E1BD0C062442D35B00552BBB /* FetchAlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD0C052442D35B00552BBB /* FetchAlbumViewModel.swift */; };
+		E1BD0C092442D76600552BBB /* HttpTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD0C082442D76600552BBB /* HttpTransport.swift */; };
 		E1E03C602442BD74002A93FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C5F2442BD74002A93FF /* AppDelegate.swift */; };
-		E1E03C622442BD74002A93FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C612442BD74002A93FF /* ViewController.swift */; };
 		E1E03C642442BD77002A93FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E03C632442BD77002A93FF /* Assets.xcassets */; };
 		E1E03C672442BD77002A93FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E03C652442BD77002A93FF /* Main.storyboard */; };
 		E1E03C732442BD77002A93FF /* AlbumFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C722442BD77002A93FF /* AlbumFetchTests.swift */; };
+		E1E03C812442BECC002A93FF /* FetchAlbumWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C802442BECC002A93FF /* FetchAlbumWindowController.swift */; };
+		E1E03C832442BEFB002A93FF /* FetchAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C822442BEFB002A93FF /* FetchAlbumsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,9 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E105CA512442D94700D50ED5 /* AlbumServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumServices.swift; sourceTree = "<group>"; };
+		E1BD0C032442D25E00552BBB /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E1BD0C052442D35B00552BBB /* FetchAlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumViewModel.swift; sourceTree = "<group>"; };
+		E1BD0C082442D76600552BBB /* HttpTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTransport.swift; sourceTree = "<group>"; };
 		E1E03C5C2442BD74002A93FF /* AlbumFetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumFetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E03C5F2442BD74002A93FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1E03C612442BD74002A93FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1E03C632442BD77002A93FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1E03C662442BD77002A93FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1E03C682442BD77002A93FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +43,8 @@
 		E1E03C6E2442BD77002A93FF /* AlbumFetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumFetchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E03C722442BD77002A93FF /* AlbumFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumFetchTests.swift; sourceTree = "<group>"; };
 		E1E03C742442BD77002A93FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E03C802442BECC002A93FF /* FetchAlbumWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumWindowController.swift; sourceTree = "<group>"; };
+		E1E03C822442BEFB002A93FF /* FetchAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E105CA502442D92900D50ED5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E105CA512442D94700D50ED5 /* AlbumServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E1BD0C072442D72700552BBB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E1BD0C082442D76600552BBB /* HttpTransport.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		E1E03C532442BD74002A93FF = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +102,12 @@
 		E1E03C5E2442BD74002A93FF /* AlbumFetch */ = {
 			isa = PBXGroup;
 			children = (
+				E105CA502442D92900D50ED5 /* Services */,
+				E1E03C7F2442BDCE002A93FF /* Models */,
+				E1E03C7E2442BDC4002A93FF /* Views */,
+				E1E03C7D2442BDB1002A93FF /* ViewModels */,
+				E1BD0C072442D72700552BBB /* Managers */,
 				E1E03C5F2442BD74002A93FF /* AppDelegate.swift */,
-				E1E03C612442BD74002A93FF /* ViewController.swift */,
 				E1E03C632442BD77002A93FF /* Assets.xcassets */,
 				E1E03C652442BD77002A93FF /* Main.storyboard */,
 				E1E03C682442BD77002A93FF /* Info.plist */,
@@ -93,6 +123,31 @@
 				E1E03C742442BD77002A93FF /* Info.plist */,
 			);
 			path = AlbumFetchTests;
+			sourceTree = "<group>";
+		};
+		E1E03C7D2442BDB1002A93FF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1BD0C052442D35B00552BBB /* FetchAlbumViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E1E03C7E2442BDC4002A93FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1E03C802442BECC002A93FF /* FetchAlbumWindowController.swift */,
+				E1E03C822442BEFB002A93FF /* FetchAlbumsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1E03C7F2442BDCE002A93FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1BD0C032442D25E00552BBB /* Album.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1E03C622442BD74002A93FF /* ViewController.swift in Sources */,
+				E1BD0C062442D35B00552BBB /* FetchAlbumViewModel.swift in Sources */,
+				E1E03C812442BECC002A93FF /* FetchAlbumWindowController.swift in Sources */,
+				E1E03C832442BEFB002A93FF /* FetchAlbumsViewController.swift in Sources */,
+				E1BD0C092442D76600552BBB /* HttpTransport.swift in Sources */,
 				E1E03C602442BD74002A93FF /* AppDelegate.swift in Sources */,
+				E1BD0C042442D25E00552BBB /* Album.swift in Sources */,
+				E105CA522442D94700D50ED5 /* AlbumServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlbumFetch/AlbumFetch.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TW28WTZGPT;
@@ -357,6 +418,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedroalfonso24.AlbumFetch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -368,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlbumFetch/AlbumFetch.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TW28WTZGPT;
@@ -377,6 +440,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedroalfonso24.AlbumFetch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
