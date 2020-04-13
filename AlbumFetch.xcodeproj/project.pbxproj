@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E105CA522442D94700D50ED5 /* AlbumServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105CA512442D94700D50ED5 /* AlbumServices.swift */; };
+		E105CA552443978B00D50ED5 /* NSViewController+Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105CA542443978B00D50ED5 /* NSViewController+Spinner.swift */; };
 		E1BD0C042442D25E00552BBB /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD0C032442D25E00552BBB /* Album.swift */; };
-		E1BD0C062442D35B00552BBB /* FetchAlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD0C052442D35B00552BBB /* FetchAlbumViewModel.swift */; };
+		E1BD0C062442D35B00552BBB /* FetchAlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD0C052442D35B00552BBB /* FetchAlbumsViewModel.swift */; };
 		E1BD0C092442D76600552BBB /* HttpTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD0C082442D76600552BBB /* HttpTransport.swift */; };
+		E1C1E0DC2443D18F00AE3CBD /* AlbunTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C1E0DB2443D18F00AE3CBD /* AlbunTableCellView.xib */; };
+		E1C1E0DE2443EC8100AE3CBD /* NSString+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1E0DD2443EC8100AE3CBD /* NSString+Date.swift */; };
+		E1C1E10A24442A8700AE3CBD /* NSURLCache+ConfigCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1E10924442A8700AE3CBD /* NSURLCache+ConfigCache.swift */; };
+		E1C1E10C244433BE00AE3CBD /* CoverPictureTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C1E10B244433BE00AE3CBD /* CoverPictureTableCellView.xib */; };
+		E1DFAB0724447FF300D7D0E6 /* CheckBoxTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DFAB0624447FF300D7D0E6 /* CheckBoxTableCellView.xib */; };
 		E1E03C602442BD74002A93FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C5F2442BD74002A93FF /* AppDelegate.swift */; };
 		E1E03C642442BD77002A93FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E03C632442BD77002A93FF /* Assets.xcassets */; };
 		E1E03C672442BD77002A93FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E03C652442BD77002A93FF /* Main.storyboard */; };
 		E1E03C732442BD77002A93FF /* AlbumFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C722442BD77002A93FF /* AlbumFetchTests.swift */; };
-		E1E03C812442BECC002A93FF /* FetchAlbumWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C802442BECC002A93FF /* FetchAlbumWindowController.swift */; };
+		E1E03C812442BECC002A93FF /* FetchAlbumsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C802442BECC002A93FF /* FetchAlbumsWindowController.swift */; };
 		E1E03C832442BEFB002A93FF /* FetchAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E03C822442BEFB002A93FF /* FetchAlbumsViewController.swift */; };
+		E1F841952444852100120158 /* CheckBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F841942444852100120158 /* CheckBoxTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +38,15 @@
 
 /* Begin PBXFileReference section */
 		E105CA512442D94700D50ED5 /* AlbumServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumServices.swift; sourceTree = "<group>"; };
+		E105CA542443978B00D50ED5 /* NSViewController+Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSViewController+Spinner.swift"; sourceTree = "<group>"; };
 		E1BD0C032442D25E00552BBB /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		E1BD0C052442D35B00552BBB /* FetchAlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumViewModel.swift; sourceTree = "<group>"; };
+		E1BD0C052442D35B00552BBB /* FetchAlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumsViewModel.swift; sourceTree = "<group>"; };
 		E1BD0C082442D76600552BBB /* HttpTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTransport.swift; sourceTree = "<group>"; };
+		E1C1E0DB2443D18F00AE3CBD /* AlbunTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbunTableCellView.xib; sourceTree = "<group>"; };
+		E1C1E0DD2443EC8100AE3CBD /* NSString+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Date.swift"; sourceTree = "<group>"; };
+		E1C1E10924442A8700AE3CBD /* NSURLCache+ConfigCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSURLCache+ConfigCache.swift"; sourceTree = "<group>"; };
+		E1C1E10B244433BE00AE3CBD /* CoverPictureTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverPictureTableCellView.xib; sourceTree = "<group>"; };
+		E1DFAB0624447FF300D7D0E6 /* CheckBoxTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxTableCellView.xib; sourceTree = "<group>"; };
 		E1E03C5C2442BD74002A93FF /* AlbumFetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumFetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E03C5F2442BD74002A93FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1E03C632442BD77002A93FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,8 +56,9 @@
 		E1E03C6E2442BD77002A93FF /* AlbumFetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumFetchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E03C722442BD77002A93FF /* AlbumFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumFetchTests.swift; sourceTree = "<group>"; };
 		E1E03C742442BD77002A93FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1E03C802442BECC002A93FF /* FetchAlbumWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumWindowController.swift; sourceTree = "<group>"; };
+		E1E03C802442BECC002A93FF /* FetchAlbumsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumsWindowController.swift; sourceTree = "<group>"; };
 		E1E03C822442BEFB002A93FF /* FetchAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAlbumsViewController.swift; sourceTree = "<group>"; };
+		E1F841942444852100120158 /* CheckBoxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,16 @@
 				E105CA512442D94700D50ED5 /* AlbumServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E105CA53244396B300D50ED5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E105CA542443978B00D50ED5 /* NSViewController+Spinner.swift */,
+				E1C1E0DD2443EC8100AE3CBD /* NSString+Date.swift */,
+				E1C1E10924442A8700AE3CBD /* NSURLCache+ConfigCache.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E1BD0C072442D72700552BBB /* Managers */ = {
@@ -102,6 +126,7 @@
 		E1E03C5E2442BD74002A93FF /* AlbumFetch */ = {
 			isa = PBXGroup;
 			children = (
+				E105CA53244396B300D50ED5 /* Extensions */,
 				E105CA502442D92900D50ED5 /* Services */,
 				E1E03C7F2442BDCE002A93FF /* Models */,
 				E1E03C7E2442BDC4002A93FF /* Views */,
@@ -128,7 +153,7 @@
 		E1E03C7D2442BDB1002A93FF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E1BD0C052442D35B00552BBB /* FetchAlbumViewModel.swift */,
+				E1BD0C052442D35B00552BBB /* FetchAlbumsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -136,8 +161,12 @@
 		E1E03C7E2442BDC4002A93FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E1E03C802442BECC002A93FF /* FetchAlbumWindowController.swift */,
+				E1E03C802442BECC002A93FF /* FetchAlbumsWindowController.swift */,
 				E1E03C822442BEFB002A93FF /* FetchAlbumsViewController.swift */,
+				E1C1E0DB2443D18F00AE3CBD /* AlbunTableCellView.xib */,
+				E1C1E10B244433BE00AE3CBD /* CoverPictureTableCellView.xib */,
+				E1DFAB0624447FF300D7D0E6 /* CheckBoxTableCellView.xib */,
+				E1F841942444852100120158 /* CheckBoxTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,7 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C1E10C244433BE00AE3CBD /* CoverPictureTableCellView.xib in Resources */,
+				E1C1E0DC2443D18F00AE3CBD /* AlbunTableCellView.xib in Resources */,
 				E1E03C642442BD77002A93FF /* Assets.xcassets in Resources */,
+				E1DFAB0724447FF300D7D0E6 /* CheckBoxTableCellView.xib in Resources */,
 				E1E03C672442BD77002A93FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,12 +282,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1BD0C062442D35B00552BBB /* FetchAlbumViewModel.swift in Sources */,
-				E1E03C812442BECC002A93FF /* FetchAlbumWindowController.swift in Sources */,
+				E1C1E0DE2443EC8100AE3CBD /* NSString+Date.swift in Sources */,
+				E1BD0C062442D35B00552BBB /* FetchAlbumsViewModel.swift in Sources */,
+				E1E03C812442BECC002A93FF /* FetchAlbumsWindowController.swift in Sources */,
 				E1E03C832442BEFB002A93FF /* FetchAlbumsViewController.swift in Sources */,
+				E1C1E10A24442A8700AE3CBD /* NSURLCache+ConfigCache.swift in Sources */,
 				E1BD0C092442D76600552BBB /* HttpTransport.swift in Sources */,
 				E1E03C602442BD74002A93FF /* AppDelegate.swift in Sources */,
+				E105CA552443978B00D50ED5 /* NSViewController+Spinner.swift in Sources */,
 				E1BD0C042442D25E00552BBB /* Album.swift in Sources */,
+				E1F841952444852100120158 /* CheckBoxTableViewCell.swift in Sources */,
 				E105CA522442D94700D50ED5 /* AlbumServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

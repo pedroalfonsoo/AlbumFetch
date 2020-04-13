@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import Cocoa
+
+typealias CompletionNSImageWithThrow<NSImage> = (() throws -> NSImage) -> Void
 
 class AlbumService {
     private let transport = HttpTransport()
@@ -21,6 +24,8 @@ class AlbumService {
                 }
                 
                 let albums = try JSONDecoder().decode(Albums.self, from: response)
+                print(albums)
+                
                 completionHandler({ albums })
             } catch let e {
                 completionHandler({ throw e })
@@ -28,18 +33,19 @@ class AlbumService {
         }
     }
     
-    func fetchPictures(picturesURL: [String]) {
-        picturesURL.forEach { urlString in
-            let operation = BlockOperation(block: {
-                if let url = URL(string: urlString) {
-                    URLSession(configuration: .default)
-                        .downloadTask(with: url, completionHandler: { (tempURL, response, error) in
-                        print(response)
-                    }).resume()
+    func fetchPicture(pictureURL: String, completionHandler: @escaping CompletionNSImageWithThrow<NSImage>) -> Void {
+        transport.HTTPRequest(endPoint: pictureURL) { result in
+            do {
+                guard let responseData = try result() as? Data,
+                    let image = NSImage(data: responseData) else {
+                        completionHandler({ throw NetworkError.invalidData })
+                        return
                 }
-            })
-            
-            OperationQueue().addOperation(operation)
+                
+                completionHandler({ image })
+            } catch let e {
+                completionHandler({ throw e })
+            }
         }
     }
 }

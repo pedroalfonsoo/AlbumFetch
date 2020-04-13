@@ -15,7 +15,7 @@ struct Albums: Decodable {
 
 struct Album: Decodable {
     let collectionName: String?
-    let artworkUrl60: String?
+    let artworkUrl100: String?
     let collectionPrice: Double?
     let collectionExplicitness: String?
     let trackCount: Int?

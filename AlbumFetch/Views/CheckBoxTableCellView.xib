@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView id="Wp5-to-Qnh" customClass="CheckBoxTableViewCell" customModule="AlbumFetch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="byw-po-nM9">
+                    <rect key="frame" x="18" y="18" width="22" height="18"/>
+                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" state="on" inset="2" id="aqV-03-hCP">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="byw-po-nM9" secondAttribute="bottom" constant="20" id="Qff-kl-j5C"/>
+                <constraint firstItem="byw-po-nM9" firstAttribute="leading" secondItem="Wp5-to-Qnh" secondAttribute="leading" constant="20" id="eEs-qk-wdD"/>
+                <constraint firstAttribute="trailing" secondItem="byw-po-nM9" secondAttribute="trailing" constant="20" id="jz8-NW-Ye1"/>
+                <constraint firstItem="byw-po-nM9" firstAttribute="top" secondItem="Wp5-to-Qnh" secondAttribute="top" constant="20" id="mCy-b4-KRv"/>
+            </constraints>
+            <connections>
+                <outlet property="checkBox" destination="byw-po-nM9" id="oSd-9h-wu8"/>
+            </connections>
+            <point key="canvasLocation" x="-63.5" y="17"/>
+        </tableCellView>
+    </objects>
+</document>

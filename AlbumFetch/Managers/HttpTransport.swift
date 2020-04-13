@@ -56,6 +56,7 @@ class HttpTransport {
         // Creating 'URLRequest' object
         var urlRequest = URLRequest(url: url)
         urlRequest.timeoutInterval = TimeInterval(sessionTimeOutInterval)
+        urlRequest.cachePolicy = .returnCacheDataElseLoad
         
         // URL is valid, 'dataTask' api can be called
         session?.dataTask(with: urlRequest) { (data, response, error) in

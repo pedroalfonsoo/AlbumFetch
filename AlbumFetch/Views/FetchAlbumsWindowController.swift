@@ -1,5 +1,5 @@
 //
-//  FetchAlbumWindowController.swift
+//  FetchAlbumsWindowController.swift
 //  AlbumFetch
 //
 //  Created by Pedro Alfonso on 4/11/20.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class FetchAlbumWindowController: NSWindowController {
+class FetchAlbumsWindowController: NSWindowController {
     override init(window: NSWindow?) {
         super.init(window: window)
     }
@@ -33,7 +33,7 @@ class FetchAlbumWindowController: NSWindowController {
             // Window will be positionated at the center of the screen
             window_.setFrame(CGRect(x: 0,
                                     y: 0,
-                                    width: screenRectangle.width ,
+                                    width: screenRectangle.width,
                                     height: screenRectangle.height), display: false)
             window_.center()
         }
