@@ -333,7 +333,7 @@ extension FetchAlbumsViewController: NSTableViewDelegate {
                     return nil
             }
             
-            checkBoxCell.checkBox.state = cellContentString.elementsEqual("Explicit") ?
+            checkBoxCell.checkBox.state = cellContentString.elementsEqual("explicit") ?
                 NSControl.StateValue.on : NSControl.StateValue.off
         
         default:
